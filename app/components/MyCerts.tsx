@@ -12,6 +12,7 @@ import { CERTS } from '../constants/data/certs'
 import TitleComponent from '@/components/shared/TitleComponent'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import LightGallery from 'lightgallery/react';
+import type { LightGallery as LightGalleryInstance } from 'lightgallery/lightgallery';
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -23,8 +24,7 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 export default function MyCerts() {
-  const lightGalleryRef = useRef(null);
-
+  const lightGalleryRef = useRef<LightGalleryInstance | null>(null);
 
   return (
     <section id='certs' className='container px-4 py-15 lg:px-0'>
@@ -51,7 +51,7 @@ export default function MyCerts() {
                 elementClassNames="lightgallery-item-wrapper"
               >
                 <a
-                  href={cert.image}
+                  href={cert.image.src}
                   data-lg-size="500-300"
                   className='block cursor-zoom-in'
                   data-sub-html={`<h4>${cert.name}</h4><p>${cert.organizer}</p>`}
@@ -59,7 +59,7 @@ export default function MyCerts() {
                   <CardHeader className='p-0'>
                     <AspectRatio ratio={16 / 9}>
                       <Image
-                        src={cert.image}
+                        src={cert.image.src}
                         alt={cert.name}
                         width={500}
                         height={300}
