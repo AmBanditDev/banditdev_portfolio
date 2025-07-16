@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MdArrowOutward } from 'react-icons/md'
+// import { MdArrowOutward } from 'react-icons/md'
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { PROJECTS } from '@/app/constants/data/projects';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
-import { Button } from '@/components/ui/button';
+// import { motion } from 'framer-motion'
+// import { fadeMotion } from '@/app/constants/motion'
+// import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
 type PageProps = {
@@ -16,34 +16,20 @@ type PageProps = {
   };
 };
 
-type techColorsProps = {
-  [name: string]: string
-}
-
 export default function ProjectDetailPage({ params }: PageProps) {
   const { slug } = params
   const project = PROJECTS.find((p) => p.slug === slug);
 
-  console.log('slug: ', slug);
-  console.log('project: ', project);
-
-  // const someProjects = PROJECTS.slice(1, 5)
-
-  // const techColors: techColorsProps = {
-  //   PHP: 'tech-php',
-  //   SQL: 'tech-sql',
-  //   Laravel: 'tech-laravel',
-  //   MySQL: 'tech-mysql',
-  //   Dart: 'tech-dart',
-  //   Flutter: 'tech-flutter',
-  //   Tensorflow: 'tech-tensorflow',
-  //   Keras: 'tech-keras',
-  //   'Google Maps API': 'tech-google-maps-api',
-  //   Firebase: 'tech-firebase',
-  //   'Tensorflow Lite': 'tech-tensorflow-lite',
-  //   'React.js': 'tech-react-js',
-  //   MongoDB: 'tech-mongodb',
-  // };
+  if (!project) {
+    return (
+      <div className='container px-4 lg:py-15 lg:px-0 text-center text-red-500'>
+        <h1 className='text-3xl font-bold'>Project not found!</h1>
+        <Link href="/" className='text-blue-500 hover:underline mt-4 inline-block'>
+          Go back to projects
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -58,11 +44,11 @@ export default function ProjectDetailPage({ params }: PageProps) {
       <section className='space-y-10'>
         <div className='space-y-6'>
           <h1 className='text-[26px] text-title font-semibold'>
-            {project?.app_name}
+            {project.app_name}
           </h1>
 
           <p className="text-muted-paragraph indent-8">
-            {project?.descriptionEN}
+            {project.descriptionEN}
           </p>
 
           <div className="flex h-10 items-center space-x-10 text-sm text-gray-500 dark:text-white/50">
@@ -79,7 +65,7 @@ export default function ProjectDetailPage({ params }: PageProps) {
             <div className='flex flex-col gap-1'>
               <div>Techs used</div>
               <div className='flex flex-row items-center space-x-4'>
-                {project?.SKILLS.map((skill, index) => (
+                {project.SKILLS.map((skill, index) => (
                   <Image
                     key={index}
                     src={skill.icon}
@@ -96,8 +82,8 @@ export default function ProjectDetailPage({ params }: PageProps) {
 
         <AspectRatio ratio={16 / 9}>
           <Image
-            src={project?.project_image}
-            alt={project?.project_name}
+            src={project.project_image}
+            alt={project.app_name}
             width={1920}
             height={1080}
             loading='lazy'
