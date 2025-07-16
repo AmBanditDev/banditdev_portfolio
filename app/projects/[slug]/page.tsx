@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,16 +11,11 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 // import { fadeMotion } from '@/app/constants/motion'
 // import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { useParams } from 'next/navigation'
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export default function ProjectDetailPage({ params }: PageProps) {
-  const { slug } = params
-  const project = PROJECTS.find((p) => p.slug === slug);
+export default function ProjectDetailPage() {
+  const params = useParams()
+  const project = PROJECTS.find((p) => p.slug === params.slug);
 
   if (!project) {
     return (
