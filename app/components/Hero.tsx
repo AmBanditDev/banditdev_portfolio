@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { PROFILE } from "../constants/data/main"
-import { SlLocationPin } from "react-icons/sl";
 import { PiDownloadSimple } from "react-icons/pi";
 import Link from 'next/link';
 import { motion } from 'framer-motion'
