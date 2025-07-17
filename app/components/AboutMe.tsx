@@ -8,7 +8,7 @@ import Title from '@/components/shared/TitleComponent'
 
 export default function AboutMe() {
     return (
-        <section id='about' className='container pt-20 pb-15 px-4 lg:px-0'>
+        <section id='about' className='container pt-20 pb-15 px-4 lg:px-0 scroll-mt-20'>
             <motion.div {...fadeMotion} className='flex flex-col gap-8'>
                 <Title title="👋 About me" />
 

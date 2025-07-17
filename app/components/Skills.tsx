@@ -20,7 +20,7 @@ export default function Skills() {
   ]
 
   return (
-    <section id='stack' className='container px-4 py-15 lg:px-0'>
+    <section id='stack' className='container px-4 py-15 lg:px-0 scroll-mt-20'>
       <div className='flex flex-col gap-8'>
         <Title title='✨ Skills' />
 

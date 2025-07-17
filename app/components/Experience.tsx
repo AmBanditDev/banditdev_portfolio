@@ -9,7 +9,7 @@ import Title from '@/components/shared/TitleComponent';
 
 export default function Experience() {
   return (
-    <section id='experience' className='container px-4 py-15 lg:px-0'>
+    <section id='experience' className='container px-4 py-15 lg:px-0 scroll-mt-20'>
       <motion.div {...fadeMotion} className='flex flex-col gap-8'>
         <Title title='💼 Experience' />
 
