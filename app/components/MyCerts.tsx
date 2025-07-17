@@ -27,7 +27,7 @@ export default function MyCerts() {
   const lightGalleryRef = useRef<LightGalleryInstance | null>(null);
 
   return (
-    <section id='certs' className='container px-4 py-15 lg:px-0 scroll-mt-20'>
+    <section id='certs' className='container px-4 py-15 lg:px-0 scroll-mt-10'>
       <div className='flex flex-col gap-8'>
         <TitleComponent title="🏆 Certifications" />
 

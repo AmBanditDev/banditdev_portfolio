@@ -109,8 +109,8 @@ export default function Navbar() {
                   <Link href="/#certs" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
                     Certs
                   </Link>
-                  <Link href="/#stack" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Stack
+                  <Link href="/#skills" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
+                    Skills
                   </Link>
                   <Link href="/#contact" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
                     Contact

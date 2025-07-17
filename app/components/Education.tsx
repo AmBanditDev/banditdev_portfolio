@@ -5,7 +5,7 @@ import TitleComponent from '@/components/shared/TitleComponent';
 
 export default function Education() {
   return (
-    <section id='education' className='container px-4 py-15 lg:px-0 scroll-mt-20'>
+    <section id='education' className='container px-4 py-15 lg:px-0 scroll-mt-10'>
       <div className='flex flex-col gap-8'>
         <TitleComponent title='🎓 Education' />
 
