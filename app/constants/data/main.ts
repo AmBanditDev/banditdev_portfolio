@@ -19,6 +19,7 @@ export const PROFILE = {
     profile_image: profileMeIlus,
     email: "thanwabandit.yos@gmail.com",
     address: "Samutprakan, Thailand",
+    full_address: "1739/35, Soi Noree 1, Bangpoo Villa, Sukhumvit Rd. Taibanmai, Mueang, Samut Prakan 10280, Thailand",
     department: [
         "Frontend Developer",
         "Fullstack Developer"

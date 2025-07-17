@@ -4,8 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-
-  --animate-typing: typing 3s steps(20) infinite alternate, blink .7s infinite;
+  --animate-typing: typing 3s steps(20) infinite alternate, blink 0.7s infinite;
 
   @keyframes typing {
     0% {
@@ -176,5 +175,26 @@ html {
 
   .text-muted-paragraph {
     @apply text-gray-700 dark:text-white/50;
+  }
+
+  .nav-link-underline {
+    @apply relative inline text-foreground no-underline pb-0.5;
+  }
+
+  .nav-link-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+
+  .nav-link-underline:hover::after {
+    transform: scaleX(1);
   }
 }

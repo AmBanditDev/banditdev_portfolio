@@ -59,7 +59,7 @@ export default function RootLayout({
 
       <GoogleTagManager gtmId="GTM-MGV65R6W" />
 
-      <body className={`${baiJamjuree.className} antialiased relative max-w-[700px] mx-auto overflow-x-hidden`}
+      <body className={`${baiJamjuree.className} antialiased relative max-w-max lg:max-w-[700px] mx-auto overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
