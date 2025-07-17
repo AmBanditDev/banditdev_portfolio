@@ -7,7 +7,7 @@ type TitleProps = {
 const TitleComponent = ({ title }: TitleProps) => {
     return (
         <h2
-            className='text-xl text-title font-semibold'
+            className='text-lg md:text-xl text-title font-semibold'
             data-aos="fade-up"
             data-aos-duration={1000}
         >

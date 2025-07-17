@@ -36,7 +36,11 @@ import xd from "@/public/assets/images/techs/adobe-xd.svg";
 import canva from "@/public/assets/images/techs/canva.svg"
 import trello from "@/public/assets/images/techs/trello.svg"
 
+// 404 not found
+import notFound from '@/public/assets/images/not-found.svg'
+
 export const icons = {
+    notFound,
     reactjs,
     nextjs,
     redux,

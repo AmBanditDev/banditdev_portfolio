@@ -54,28 +54,32 @@ export default function Hero() {
                 <h1 className='text-title text-xl md:text-2xl font-semibold'>
                   {PROFILE.firstname} {PROFILE.lastname}
                 </h1>
-                <h2 className='text-muted-paragraph text-xl font-medium'>{PROFILE.department}</h2>
-                <div className='text-muted-paragraph'>
-                  <p className='text-sm md:max-w-96'>{PROFILE.represent}</p>
+
+                <div className='flex justify-center md:justify-start'>
+                  <div className="max-w-max">
+                    <h2 className="animate-typing overflow-hidden whitespace-nowrap w-max border-r-2 border-r-gray-900 dark:border-r-white pr-5 text-base md:text-lg text-muted-paragraph text-center font-medium">
+                      {PROFILE.department.join(' | ')}
+                    </h2>
+                  </div>
                 </div>
+
+                <p className='md:max-w-96 text-sm text-muted-paragraph'>{PROFILE.represent}</p>
               </div>
             </div>
           </div>
 
           {/* Download CV Button */}
-          <div className='links'>
-            <a href='/assets/mycv.pdf'
-              rel='noopener noreferer'
-              download
-              className='flex items-center gap-x-2 rounded-full bg-gray-300 px-3 py-2 text-sm font-semibold tracking-tight text-slate-950'
-            >
-              <PiDownloadSimple size={20} />{" "}
-              Download CV
-            </a>
-          </div>
+          <a
+            href={PROFILE.cv_resume_link}
+            target='_blank'
+            rel='noopener noreferer'
+            className="my-3 px-3 py-2 flex items-center justify-center gap-x-2 rounded-full cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-sky-500 before:to-sky-700 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-sm font-semibold text-sky-500 hover:text-white hover:dark:text-white border-2 border-sky-500 dark:border-sky-300/10 hover:dark:border-sky-500 dark:bg-sky-400/10">
+            <PiDownloadSimple size={20} />{" "}
+            Download CV
+          </a>
         </div>
 
-        <div className="links flex flex-col lg:flex-row items-center justify-between gap-4 pt-2 border-t border-[#363636]">
+        <div className="links flex flex-col lg:flex-row items-center justify-between gap-4 pt-3 border-t border-slate-200 dark:border-slate-800">
           <div
             onClick={handleCopyEmail}
             className='email flex items-center gap-2 cursor-pointer group'>
@@ -89,9 +93,12 @@ export default function Hero() {
             {PROFILE.socials.map((social, index) => {
               const SocialIcon = social.icon
               return (
-                <Link href={social.link} target='_blank' key={index} className='text-sm md:text-base text-muted-paragraph flex items-center gap-1.5 font-medium group'>
-                  <SocialIcon className='h-5 w-5 group-hover:text-slate-950 group-hover:dark:text-slate-100' />
-                  <span className='group-hover:text-slate-950 group-hover:dark:text-slate-100'>{social.name}</span>
+                <Link
+                  key={index}
+                  href={social.link}
+                  target='_blank'
+                  className='text-sm md:text-base text-muted-paragraph flex items-center gap-1.5 font-medium group'>
+                  <SocialIcon className='size-6 group-hover:text-slate-950 group-hover:dark:text-slate-100' />
                 </Link>
               )
             })}

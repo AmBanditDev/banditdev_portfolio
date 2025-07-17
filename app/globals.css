@@ -3,6 +3,30 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+
+  --animate-typing: typing 3s steps(20) infinite alternate, blink .7s infinite;
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+      visibility: hidden;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: white;
+    }
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -145,7 +169,8 @@ html {
     @apply text-[#4f5b93];
   }
 
-  .text-title {
+  .text-title,
+  .text-navigate {
     @apply text-slate-900 dark:text-slate-200;
   }
 

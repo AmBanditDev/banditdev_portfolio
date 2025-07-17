@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="h-12 flex items-center justify-between text-sm">
           <div className="flex items-center gap-2">
             <Link
-              href="/#intro"
+              href="/"
               className="text-lg font-bold pl-4"
             >
               BANDITDEV

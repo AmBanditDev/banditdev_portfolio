@@ -95,7 +95,7 @@ export default function Contact() {
         <div className='content flex flex-col md:flex-row justify-between gap-12 md:gap-8'>
           <div
             className='info flex flex-col gap-8 pl-4 border-l-4 border-sky-500/60 dark:border-white/50 max-h-fit'
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration={1000}
           >
             {CONTACTS.map((contact, index) => {
@@ -125,7 +125,7 @@ export default function Contact() {
           </div>
 
           <div
-            className='contact-form w-full flex flex-col gap-4' data-aos="fade-left"
+            className='contact-form w-full flex flex-col gap-4' data-aos="fade-up"
             data-aos-duration={1200}
           >
             <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>Message:</h3>

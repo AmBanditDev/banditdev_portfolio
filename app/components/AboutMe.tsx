@@ -12,12 +12,12 @@ export default function AboutMe() {
             <motion.div {...fadeMotion} className='flex flex-col gap-8'>
                 <Title title="👋 About me" />
 
-                <p className='text-muted-paragraph'>
+                <p className='text-muted-paragraph' data-aos="fade-up" data-aos-duration={800}>
                     {PROFILE.work_objective}
                 </p>
 
                 <div>
-                    <h3 className='text-lg text-slate-900 dark:text-slate-200 font-semibold mb-4 '
+                    <h3 className='text-base md:text-lg text-slate-900 dark:text-slate-200 font-semibold mb-4 '
                         data-aos="fade-up">
                         🌟 Soft Skills
                     </h3>
