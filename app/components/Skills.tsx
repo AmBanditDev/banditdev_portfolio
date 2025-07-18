@@ -19,6 +19,25 @@ export default function Skills() {
     ...SKILLS["other"],
   ]
 
+  const commonClasses = `
+    text-gray-700                                 
+    dark:text-gray-300                             
+    data-[state=active]:!text-sky-500              
+    data-[state=active]:!bg-transparent            
+    data-[state=active]:!shadow-none               
+    data-[state=active]:!border-none               
+    data-[state=inactive]:bg-transparent          
+    data-[state=inactive]:border-none          
+    hover:text-sky-500                           
+    dark:hover:text-slate-100                      
+    px-4 py-2 rounded-md
+    font-semibold
+    text-sm md:text-base
+    cursor-pointer
+    transition-colors duration-200
+    focus-visible:ring-0 focus-visible:ring-offset-0
+  `;
+
   return (
     <section id='skills' className='container py-15 scroll-mt-10'>
       <div className='flex flex-col gap-8'>
@@ -26,15 +45,16 @@ export default function Skills() {
 
         <Tabs defaultValue="all">
           <TabsList
-            className='w-full md:w-fit self-center mb-6 rounded-full overflow-x-scroll sm:overflow-auto'
+            className='flex flex-row justify-stretch w-full overflow-x-scroll no-scrollbar rounded-full h-12 mb-4 border-2 bg-white dark:border-sky-300/10 dark:bg-sky-400/10'
             data-aos="fade-up"
           >
-            <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="frontend">Frontend</TabsTrigger>
-            <TabsTrigger value="backend_database">Backend</TabsTrigger>
-            <TabsTrigger value="devops">DevOps</TabsTrigger>
-            <TabsTrigger value="design_tools">Design Tools</TabsTrigger>
-            <TabsTrigger value="other">Other</TabsTrigger>
+            <TabsTrigger value="all" className={commonClasses}>All</TabsTrigger>
+            <TabsTrigger value="frontend" className={commonClasses}>Frontend</TabsTrigger>
+            <TabsTrigger value="backend_database" className={commonClasses}>Backend</TabsTrigger>
+            <TabsTrigger value="devops" className={commonClasses}>DevOps</TabsTrigger>
+            <TabsTrigger value="mobile" className={commonClasses}>Mobile</TabsTrigger>
+            <TabsTrigger value="design_tools" className={commonClasses}>Design Tools</TabsTrigger>
+            <TabsTrigger value="other" className={commonClasses}>Other</TabsTrigger>
           </TabsList>
 
           <TabsContent value="all">

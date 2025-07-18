@@ -63,7 +63,7 @@ export default function Navbar() {
                 Certs
               </Link>
               <Link
-                href="/#stack"
+                href="/#skills"
                 className="nav-link-underline"
               >
                 Skills
