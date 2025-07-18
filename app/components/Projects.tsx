@@ -11,7 +11,8 @@ import TitleComponent from '@/components/shared/TitleComponent';
 import CardProjectComponent from '@/components/shared/CardProjectComponent';
 
 export default function Work() {
-  const someProjects = PROJECTS.slice(1, 5)
+  const projects = PROJECTS.filter((p) => p.published !== false).reverse().slice(0, 4)
+
   return (
     <section id='projects' className='container py-15 scroll-mt-10'>
       <motion.div {...fadeMotion} className='flex flex-col gap-8'>
@@ -19,7 +20,7 @@ export default function Work() {
         <TitleComponent title='🚀 Some of my projects' />
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-          {someProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <CardProjectComponent
               key={index}
               index={index}

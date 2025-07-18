@@ -14,6 +14,7 @@ export type ProjectProps = {
   project_name: string
   app_name: string
   slug: string
+  year: number
   project_image: StaticImageData
   descriptionEN: string
   descriptionTH: string
@@ -34,6 +35,7 @@ export const PROJECTS: ProjectProps[] = [
       "Development of a resort recommendation application in Thailand (Static App)",
     app_name: "Chill Pui Mui",
     slug: "chill-pui-mui",
+    year: 2023,
     project_image: project_coverimg_1,
     descriptionEN: "",
     descriptionTH: "",
@@ -57,6 +59,7 @@ export const PROJECTS: ProjectProps[] = [
       "NSC work [semi-final] - Classification of disease effecting rice leaves using image processing and deep learning",
     app_name: "Detection Rice Disease",
     slug: "detection-rice-disease",
+    year: 2024,
     project_image: project_coverimg_2,
     descriptionEN:
       "The Detection Rice Disease application is a tool designed for farmers to identify rice diseases using image processing and deep learning. This AI-powered technology offers more accurate disease classification than visual inspection. Additionally, the app allows users to access a knowledge base on rice diseases, providing further information on prevention methods and rice varieties resistant to diseases. The application primarily focuses on identifying three major rice diseases: Blast, Bacterial Blight, and Brown Spot.",
@@ -75,12 +78,32 @@ export const PROJECTS: ProjectProps[] = [
       },
       {
         name: "Tensorflow",
-        icon: icons.dart,
+        icon: icons.tensorflow,
         color: "",
       },
       {
         name: "Keras",
-        icon: icons.dart,
+        icon: icons.keras,
+        color: "",
+      },
+      {
+        name: "MongoDB",
+        icon: icons.mongodb,
+        color: "",
+      },
+      {
+        name: "Express.js",
+        icon: icons.expressjs,
+        color: "",
+      },
+      {
+        name: "React.js",
+        icon: icons.reactjs,
+        color: "",
+      },
+      {
+        name: "Node.js",
+        icon: icons.nodejs,
         color: "",
       },
     ],
@@ -92,6 +115,7 @@ export const PROJECTS: ProjectProps[] = [
       "Development of a Suan Sunandha Rajabhat University Navigator Application (Dynamic App)",
     app_name: "SSRU Map",
     slug: "ssru-map",
+    year: 2024,
     project_image: project_coverimg_3,
     descriptionEN:
       "The SSRU Map application helps students, faculty, external visitors, and new students navigate accurately to various locations within Suan Sunandha Rajabhat University.",
@@ -110,12 +134,12 @@ export const PROJECTS: ProjectProps[] = [
       },
       {
         name: "Google Maps API",
-        icon: icons.flutter,
+        icon: icons.googleMaps,
         color: "",
       },
       {
         name: "Firebase",
-        icon: icons.flutter,
+        icon: icons.firebase,
         color: "",
       },
     ],
@@ -127,6 +151,7 @@ export const PROJECTS: ProjectProps[] = [
       "Development of an application to learn English vocabulary with object detection (Dynamic App)",
     app_name: "Words Around Us",
     slug: "words-around-us",
+    year: 2024,
     project_image: project_coverimg_4,
     descriptionEN:
       "Words Around Us is an application designed for learning English vocabulary by detecting objects in your surroundings. It allows you to test your knowledge of English words while building proficiency through quizzes.",
@@ -145,12 +170,32 @@ export const PROJECTS: ProjectProps[] = [
       },
       {
         name: "Tensorflow Lite",
-        icon: icons.flutter,
+        icon: icons.tensorflow,
         color: "",
       },
       {
-        name: "Firebase",
-        icon: icons.flutter,
+        name: "React.js",
+        icon: icons.reactjs,
+        color: "",
+      },
+      {
+        name: "Node.js",
+        icon: icons.nodejs,
+        color: "",
+      },
+      {
+        name: "Express.js",
+        icon: icons.expressjs,
+        color: "",
+      },
+      {
+        name: "Prisma",
+        icon: icons.prisma,
+        color: "",
+      },
+      {
+        name: "PostgreSQL",
+        icon: icons.postgresql,
         color: "",
       },
     ],
@@ -162,6 +207,7 @@ export const PROJECTS: ProjectProps[] = [
       "Development of a website recommending cafes in Bangkok (Dynamic Website)",
     app_name: "CafeHeal",
     slug: "cafeheal",
+    year: 2024,
     project_image: project_coverimg_5,
     descriptionEN:
       "CafeHeal is a website that recommends cafes in Bangkok. Discover popular, must-visit cafes with beautiful aesthetics, unique photo opportunities, and cool locations. Easily search for cafes you're interested in and view their information and locations before you check-in.",
@@ -169,23 +215,28 @@ export const PROJECTS: ProjectProps[] = [
       "เว็บไซต์แนะนำร้านคาเฟ่ในจังหวัดกรุงเทพฯ ร้านคาเฟ่ยอดนิยมที่ต้องไปเช็คอิน ร้านสวยมุมเก๋ โลเคชันเท่ ถ่ายรูปสวยๆ ค้นหาร้านคาเฟ่ที่คุณสนใจ ดูข้อมูลร้านและโลเคชันร้านก่อนไปเช็คอินได้ง่ายๆ",
     SKILLS: [
       {
-        name: "PHP",
-        icon: icons.flutter,
+        name: "React.js",
+        icon: icons.reactjs,
         color: "",
       },
       {
-        name: "SQL",
-        icon: icons.dart,
+        name: "Express.js",
+        icon: icons.expressjs,
         color: "",
       },
       {
-        name: "Laravel",
-        icon: icons.laravel,
+        name: "Node.js",
+        icon: icons.nodejs,
         color: "",
       },
       {
-        name: "MySQL",
-        icon: icons.mysql,
+        name: "PostgreSQL",
+        icon: icons.postgresql,
+        color: "",
+      },
+      {
+        name: "Prisma",
+        icon: icons.prisma,
         color: "",
       },
     ],
@@ -196,6 +247,7 @@ export const PROJECTS: ProjectProps[] = [
     project_name: "Juliana CRM",
     app_name: "Juliana CRM",
     slug: "juliana-crm",
+    year: 2024,
     project_image: project_coverimg_6,
     descriptionEN:
       "Juliana CRM is a customer management system for a gold shop in Myanmar. It allows customers to purchase gold through the system, top up funds to buy gold, accumulate points to redeem for gold, and manage customer membership levels to receive various exclusive shop privileges.",
@@ -230,6 +282,7 @@ export const PROJECTS: ProjectProps[] = [
     project_name: "Cyberpay Wallet",
     app_name: "Cyberpay Wallet",
     slug: "cyberpay-wallet",
+    year: 2024,
     project_image: project_coverimg_7,
     descriptionEN:
       "Cyberpay Wallet is a mobile payment intermediary application designed for services within the Cyberpay Technology network. This includes services like CyberWash, CyberCoff, CyberStation, and more. It allows you to conveniently scan to pay, transfer money, top up funds, or receive Cashback for various services. Plus, you can track notifications for all these services within a single app.",

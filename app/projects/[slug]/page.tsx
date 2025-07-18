@@ -54,12 +54,14 @@ export default function ProjectDetailPage() {
             <div className="flex flex-col sm:flex-row items-start justify-start gap-4 sm:gap-10 text-sm text-gray-500 dark:text-white/50">
               <div className='flex flex-col gap-1 border-l border-gray-500/50 pl-4'>
                 <div>Category</div>
-                <div className='text-gray-700 dark:text-white font-semibold'>{project?.category_name}</div>
+                <div className='text-gray-700 dark:text-white font-semibold'>{project.category_name}</div>
               </div>
 
               <div className='flex flex-col gap-1 border-l border-gray-500/50 pl-4'>
                 <div>Year</div>
-                <div className='text-gray-700 dark:text-white font-semibold'>2024</div>
+                <div className='text-gray-700 dark:text-white font-semibold'>
+                  {project.year}
+                </div>
               </div>
 
               <div className='flex flex-col gap-1 border-l border-gray-500/50 pl-4'>
