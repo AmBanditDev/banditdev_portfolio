@@ -23,6 +23,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Title from '@/components/shared/TitleComponent';
+import { Loader2Icon, Send } from 'lucide-react';
 
 const nameSchema = z.string()
   .min(2, "Name must be at least 2 characters.")
@@ -171,9 +172,20 @@ export default function Contact() {
 
                 <Button
                   type="submit"
-                  variant='outline'
-                  className={`w-full !bg-[#FAFAFA] !text-[#121212] py-2 px-3 min-h-10 rounded-lg cursor-pointer hover:opacity-80 ${isSending ? "cursor-not-allowed opacity-50" : ""}`}>
-                  {isSending ? "Sending..." : " Send Message"}
+                  variant='default'
+                  disabled={isSending}
+                  className={`w-full py-2 px-3 min-h-10 rounded-lg cursor-pointer hover:opacity-80 ${isSending ? "cursor-not-allowed opacity-50" : ""}`}>
+                  {isSending ? (
+                    <span className='flex items-center gap-2 '>
+                      <Loader2Icon className="animate-spin" />
+                      Sending...
+                    </span>
+                  ) : (
+                    <span className='flex items-center gap-2 '>
+                      <Send />
+                      Send Message
+                    </span>
+                  )}
                 </Button>
               </form>
             </Form>
