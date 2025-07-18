@@ -3,7 +3,7 @@ import Contact from './Contact'
 
 export default function Footer() {
   return (
-    <footer id='contact' className='container pt-15 pb-4 px-4 lg:px-0' >
+    <footer id='contact' className='container pt-15 pb-4' >
       <div className='flex flex-col gap-15'>
         <Contact />
 

@@ -31,7 +31,7 @@ export default function ProjectDetailPage() {
 
   return (
 
-    <section id='projects' className='container px-4 py-10 md:py-14 lg:px-0'>
+    <section className='container py-10 md:py-14'>
       <motion.div
         {...fadeMotion}
         className='flex flex-col gap-8'>

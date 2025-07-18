@@ -13,7 +13,7 @@ import CardProjectComponent from '@/components/shared/CardProjectComponent';
 export default function Work() {
   const someProjects = PROJECTS.slice(1, 5)
   return (
-    <section id='projects' className='container px-4 py-15 lg:px-0 scroll-mt-10'>
+    <section id='projects' className='container py-15 scroll-mt-10'>
       <motion.div {...fadeMotion} className='flex flex-col gap-8'>
 
         <TitleComponent title='🚀 Some of my projects' />

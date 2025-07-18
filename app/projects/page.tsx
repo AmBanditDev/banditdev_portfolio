@@ -6,7 +6,7 @@ import CardProjectComponent from '@/components/shared/CardProjectComponent'
 
 export default function ProjectsPage() {
   return (
-    <section id='projects' className='container px-4 py-10 md:py-14 lg:px-0'>
+    <section className='container py-10 md:py-14'>
       <div className='flex flex-col gap-8'>
         <Link href="/" className='text-sm md:text-base text-navigate flex items-center gap-1.5 hover-link'>
           <FaArrowLeftLong className='size-4 md:size-5' /> Home

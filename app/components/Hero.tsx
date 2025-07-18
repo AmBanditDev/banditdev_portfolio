@@ -34,7 +34,7 @@ export default function Hero() {
     <motion.header
       {...fadeMotion}
       id='intro'
-      className='pt-16 md:pt-25 px-4 lg:px-0'
+      className='pt-16 md:pt-25'
     >
       <div className="container flex flex-col gap-8">
         <div className='header flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-4'>

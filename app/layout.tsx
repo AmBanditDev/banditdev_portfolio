@@ -32,19 +32,21 @@ export default function RootLayout({
 
       <GoogleTagManager gtmId="GTM-MGV65R6W" />
 
-      <body className={`${baiJamjuree.className} antialiased relative max-w-max lg:max-w-[700px] mx-auto overflow-x-hidden`}
+      <body className={`${baiJamjuree.className} antialiased relative mx-auto overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="w-full overflow-hidden">
-            {children}
-            <AOSAnimate />
-          </main>
-          <Footer />
+          <div className="max-w-[700px] mx-auto px-4 lg:px-0">
+            <Navbar />
+            <main className="w-full">
+              {children}
+              <AOSAnimate />
+            </main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
