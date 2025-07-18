@@ -57,7 +57,7 @@ export default function Hero() {
 
                 <div className='flex justify-center md:justify-start'>
                   <div className="max-w-max">
-                    <h2 className="animate-typing overflow-hidden whitespace-nowrap w-max border-r-2 border-r-gray-900 dark:border-r-white pr-5 text-base md:text-lg text-muted-paragraph text-center font-medium">
+                    <h2 className="animate-typing overflow-hidden whitespace-nowrap w-max border-r-2 border-r-gray-900 dark:border-r-white pl-5 lg:pl-0 pr-5 text-base md:text-lg text-sky-500 text-center font-medium">
                       {PROFILE.department.join(' | ')}
                     </h2>
                   </div>
