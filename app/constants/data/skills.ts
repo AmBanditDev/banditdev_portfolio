@@ -3,6 +3,14 @@ import { icons } from "../icons";
 export const SKILLS = {
   frontend: [
     {
+      icon: icons.html,
+      name: "HTML",
+    },
+    {
+      icon: icons.css,
+      name: "CSS",
+    },
+    {
       icon: icons.javascript,
       name: "JavaScript",
     },
@@ -18,15 +26,18 @@ export const SKILLS = {
       icon: icons.nextjs,
       name: "Next.js",
     },
-
+    // {
+    //   icon: icons.redux,
+    //   name: "Redux",
+    // },
     {
-      icon: icons.redux,
-      name: "Redux",
+      icon: icons.zustand,
+      name: "Zustand",
     },
-    {
-      icon: icons.nextjs,
-      name: "TanStack Query",
-    },
+    // {
+    //   icon: icons.tanstackQuery,
+    //   name: "TanStack Query",
+    // },
     {
       icon: icons.bootstrap,
       name: "Bootstrap 5",
@@ -36,11 +47,11 @@ export const SKILLS = {
       name: "Tailwind CSS",
     },
     {
-      icon: icons.nextjs,
+      icon: icons.shadcn,
       name: "Shadcn UI",
     },
     {
-      icon: icons.nextjs,
+      icon: icons.mui,
       name: "Material UI",
     },
   ],
@@ -54,10 +65,10 @@ export const SKILLS = {
       icon: icons.expressjs,
       name: "Express.js",
     },
-    {
-      icon: icons.laravel,
-      name: "Laravel",
-    },
+    // {
+    //   icon: icons.laravel,
+    //   name: "Laravel",
+    // },
     {
       icon: icons.mysql,
       name: "MySql",
@@ -131,12 +142,28 @@ export const SKILLS = {
       name: "Canva",
     },
     {
-      icon: icons.nextjs,
+      icon: icons.miro,
       name: "Miro",
     },
     {
       icon: icons.trello,
       name: "Trello",
+    },
+    {
+      icon: icons.notion,
+      name: "Notion",
+    },
+    {
+      icon: icons.navicat,
+      name: "Navicat",
+    },
+    {
+      icon: icons.postman,
+      name: "Postman",
+    },
+    {
+      icon: icons.filezilla,
+      name: "Filezilla",
     },
   ],
 };

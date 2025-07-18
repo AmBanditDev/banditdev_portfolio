@@ -1,11 +1,17 @@
 // # frontend icons
+import html from "@/public/assets/images/techs/html.svg";
+import css from "@/public/assets/images/techs/css.svg";
+import javascript from "@/public/assets/images/techs/javascript.svg";
+import typescript from "@/public/assets/images/techs/typescript.svg";
 import reactjs from "@/public/assets/images/techs/reactjs.svg";
 import nextjs from "@/public/assets/images/techs/nextjs.svg";
 import redux from "@/public/assets/images/techs/redux.svg";
-import javascript from "@/public/assets/images/techs/javascript.svg";
-import typescript from "@/public/assets/images/techs/typescript.svg";
+import zustand from "@/public/assets/images/techs/zustand.svg";
 import tailwind from "@/public/assets/images/techs/tailwind.svg";
 import bootstrap from "@/public/assets/images/techs/bootstrap.svg";
+import mui from "@/public/assets/images/techs/material-ui.svg";
+import shadcn from "@/public/assets/images/techs/shadcn-ui.svg";
+import tanstackQuery from "@/public/assets/images/techs/tanstack-query.png";
 
 // # backend-database icons
 import nodejs from "@/public/assets/images/techs/nodejs.svg";
@@ -35,19 +41,30 @@ import xd from "@/public/assets/images/techs/adobe-xd.svg";
 // # other icons
 import canva from "@/public/assets/images/techs/canva.svg"
 import trello from "@/public/assets/images/techs/trello.svg"
+import miro from "@/public/assets/images/techs/miro.png"
+import notion from "@/public/assets/images/techs/notion.png"
+import navicat from "@/public/assets/images/techs/navicat.png"
+import postman from "@/public/assets/images/techs/postman.svg"
+import filezilla from "@/public/assets/images/techs/filezilla.svg"
 
 // 404 not found
 import notFound from '@/public/assets/images/not-found.svg'
 
 export const icons = {
     notFound,
+    html,
+    css,
+    javascript,
+    typescript,
     reactjs,
     nextjs,
     redux,
-    javascript,
-    typescript,
+    zustand,
     tailwind,
     bootstrap,
+    mui,
+    shadcn,
+    tanstackQuery,
     nodejs,
     expressjs,
     mysql,
@@ -66,5 +83,10 @@ export const icons = {
     figma,
     xd,
     canva,
-    trello
+    trello,
+    miro,
+    notion,
+    navicat,
+    postman,
+    filezilla,
 }
