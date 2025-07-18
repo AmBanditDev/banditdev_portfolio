@@ -104,7 +104,7 @@ export default function ProjectDetailPage() {
     // <>
     //   <header id='projects' className='container px-4 lg:py-15 lg:px-0'>
     //     <div className='flex flex-col gap-8'>
-    //       <Link href="/" className='text-light-gray flex items-center gap-1.5 hover-link'>
+    //       <Link href="/" className='text-muted-paragraph  flex items-center gap-1.5 hover-link'>
     //         <FaArrowLeftLong size={20} /> Projects
     //       </Link>
     //     </div>
