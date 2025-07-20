@@ -78,11 +78,11 @@ export default function Contact() {
       values,
       "bLuPsrylU_BPaXByq",
     ).then((response) => {
-      // console.error("SUCCESS", response.status, response.text);
+      console.log("SUCCESS", response.status, response.text);
       toast.success(t('contact-form.alert-message.send.success'))
       form.reset();
     }).catch((error) => {
-      // console.error("FAILED...", error);
+      console.error("FAILED...", error);
       toast.success(t('contact-form.alert-message.send.failed'))
     }).finally(() => {
       setIsSending(false)

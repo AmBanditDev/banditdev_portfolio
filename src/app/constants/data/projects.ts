@@ -1,5 +1,5 @@
 // project images
-import chill_pui_mui_coverimg from "@/public/assets/images/projects/chill_pui_mui/chill-pui-mui-cover-img.png";
+// import chill_pui_mui_coverimg from "@/public/assets/images/projects/chill_pui_mui/chill-pui-mui-cover-img.png";
 import detection_rice_disease_coverimg from "@/public/assets/images/projects/detection_rice_disease/detection-rice-disease-cover-img.png";
 import ssru_map_coverimg from "@/public/assets/images/projects/ssru_map/ssru-map-cover-img.png";
 import words_around_us_coverimg from "@/public/assets/images/projects/words_around_us/words-around-us-cover-img.png";

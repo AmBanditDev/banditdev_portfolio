@@ -4,7 +4,7 @@ import { AspectRatio } from '../ui/aspect-ratio'
 import Image from 'next/image'
 import { MdArrowOutward } from 'react-icons/md'
 import { Card, CardFooter, CardHeader } from '../ui/card'
-import { ProjectProps } from '@/app/constants/data/projects'
+import { ProjectProps } from '@/src/app/constants/data/projects'
 
 type CardProjectProps = {
   index: number
