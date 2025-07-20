@@ -8,9 +8,11 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import Title from '@/components/shared/TitleComponent'
+import TitleComponent from '@/components/shared/TitleComponent'
+import { useTranslations } from 'next-intl'
 
 export default function Skills() {
+  const t = useTranslations('skills-section')
   const allSkills = [
     ...SKILLS["frontend"],
     ...SKILLS["backend_database"],
@@ -41,7 +43,7 @@ export default function Skills() {
   return (
     <section id='skills' className='container py-15 scroll-mt-10'>
       <div className='flex flex-col gap-8'>
-        <Title title='✨ Skills' />
+        <TitleComponent title={`✨ ${t('title')}`} />
 
         <Tabs defaultValue="all">
           <TabsList

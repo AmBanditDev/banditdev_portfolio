@@ -6,11 +6,14 @@ import { PROFILE } from "../constants/data/main"
 import { PiDownloadSimple } from "react-icons/pi";
 import Link from 'next/link';
 import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
+import { fadeMotion } from '@/src/app/constants/motion'
 import { Copy } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('hero-section');
   const [isCopied, setIsCopied] = useState(false)
+
 
   const handleCopyEmail = () => {
     setIsCopied(false)
@@ -42,7 +45,7 @@ export default function Hero() {
             {/* Profile Image */}
             <Image
               src={PROFILE.profile_image}
-              alt={PROFILE.aka}
+              alt={PROFILE.aka_key}
               width={120}
               height={120}
               className='rounded-lg'
@@ -52,7 +55,7 @@ export default function Hero() {
             <div className='flex flex-col'>
               <div className='flex flex-col text-center lg:text-start space-y-2'>
                 <h1 className='text-title text-xl md:text-2xl font-semibold'>
-                  {PROFILE.firstname} {PROFILE.lastname}
+                  {t('firstname')} {t('lastname')}
                 </h1>
 
                 <div className='flex justify-center md:justify-start'>
@@ -63,7 +66,9 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <p className='md:max-w-96 text-sm text-muted-paragraph'>{PROFILE.represent}</p>
+                <p className='md:max-w-96 text-sm text-muted-paragraph'>
+                  {t(PROFILE.represent_key)}
+                </p>
               </div>
             </div>
           </div>
@@ -75,7 +80,7 @@ export default function Hero() {
             rel='noopener noreferer'
             className="my-3 px-3 py-2 flex items-center justify-center gap-x-2 rounded-full cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-sky-500 before:to-sky-700 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-sm font-semibold text-sky-500 hover:text-white hover:dark:text-white border-2 border-sky-500 dark:border-sky-300/10 hover:dark:border-sky-500 dark:bg-sky-400/10">
             <PiDownloadSimple size={20} />{" "}
-            Download CV
+            {t('button.label')}
           </a>
         </div>
 
@@ -85,7 +90,7 @@ export default function Hero() {
             className='email flex items-center gap-2 cursor-pointer group'>
             <Copy className={`h-5 w-5 text-muted-paragraph group-hover:text-slate-950 group-hover:dark:text-slate-100 ${isCopied ? "text-slate-950 dark:text-slate-100" : ""}`} />
             <p className={`text-sm md:text-base text-muted-paragraph font-medium group-hover:text-slate-950 group-hover:dark:text-slate-100 ${isCopied ? "text-slate-950 dark:text-slate-100" : ""}`}>
-              {isCopied ? "Copied!" : PROFILE.email}
+              {isCopied ? t('copied') : PROFILE.email}
             </p>
           </div>
 

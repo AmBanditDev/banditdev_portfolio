@@ -22,14 +22,16 @@ import 'lightgallery/css/lg-thumbnail.css';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import { useTranslations } from 'next-intl'
 
 export default function MyCerts() {
+  const t = useTranslations('certs-section')
   const lightGalleryRef = useRef<LightGalleryInstance | null>(null);
 
   return (
     <section id='certs' className='container py-15 scroll-mt-10'>
       <div className='flex flex-col gap-8'>
-        <TitleComponent title="🏆 Certifications" />
+        <TitleComponent title={`🏆 ${t('title')}`} />
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           {CERTS.map((cert, index) => (

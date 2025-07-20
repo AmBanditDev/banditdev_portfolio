@@ -1,0 +1,220 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, th {TH Thai} en {🇺🇸 English} other {Unknown}}"
+  },
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "certs": "Certs",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero-section": {
+    "firstname": "Thanwabandit",
+    "lastname": "Yoschamlue",
+    "aka": "BanditDev",
+    "address": "Samutprakan, Thailand",
+    "full_address": "1739/35, ซอยโนรี 1 บางปูวิลล่า ถ.สขุมวิท ต.ท้ายบ้านใหม่, อ.เมือง, จ.สมุทรปราการ 10280, ประเทศไทย",
+    "department": {
+      "frontend": "Frontend Developer",
+      "fullstack": "Fullstack Developer"
+    },
+    "represent": "I'm a web developer with a passion for technology, always ready to learn new things. I'm seeking opportunities to collaborate with expert teams to expand my capabilities and grow into a web expert in the future.",
+    "button": {
+      "label": "Download CV"
+    },
+    "copied": "Copied!"
+  },
+  "aboutme-section": {
+    "title": "About Me",
+    "description": "I can develop websites and mobile applications both front-end and back-end. But I am good at front-end software development. I'm a new developer looking for an opportunity to expand my skills. And I am committed to improving my abilities in these technologies. I am ready for a career opportunity and am excited to be involved in a project that allows me to expand my experience and knowledge.",
+    "soft-skills": {
+      "skill_1": "Teamwork",
+      "skill_2": "Self-Improvement",
+      "skill_3": "Creativity",
+      "skill_4": "Optimism",
+      "skill_5": "Adaptability"
+    }
+  },
+  "projects-section": {
+    "title": "Some of my projects",
+    "projects": {
+      "title": "Projects",
+      "lists": {
+        "list_1": {
+          "title": "Detection Rice Disease",
+          "description": "The Detection Rice Disease application is a tool designed for farmers to identify rice diseases using image processing and deep learning. This AI-powered technology offers more accurate disease classification than visual inspection. Additionally, the app allows users to access a knowledge base on rice diseases, providing further information on prevention methods and rice varieties resistant to diseases. The application primarily focuses on identifying three major rice diseases: Blast, Bacterial Blight, and Brown Spot."
+        },
+        "list_2": {
+          "title": "SSRU Map",
+          "description": "The SSRU Map application helps students, faculty, external visitors, and new students navigate accurately to various locations within Suan Sunandha Rajabhat University."
+        },
+        "list_3": {
+          "title": "Words Around Us",
+          "description": "Words Around Us is an application designed for learning English vocabulary by detecting objects in your surroundings. It allows you to test your knowledge of English words while building proficiency through quizzes."
+        },
+        "list_4": {
+          "title": "CafeHeal",
+          "description": "CafeHeal is a website that recommends cafes in Bangkok. Discover popular, must-visit cafes with beautiful aesthetics, unique photo opportunities, and cool locations. Easily search for cafes you're interested in and view their information and locations before you check-in."
+        },
+        "list_5": {
+          "title": "Juliana CRM",
+          "description": "Juliana CRM is a customer management system for a gold shop in Myanmar. It allows customers to purchase gold through the system, top up funds to buy gold, accumulate points to redeem for gold, and manage customer membership levels to receive various exclusive shop privileges."
+        },
+        "list_6": {
+          "title": "Cyberpay Wallet",
+          "description": "Cyberpay Wallet is a mobile payment intermediary application designed for services within the Cyberpay Technology network. This includes services like CyberWash, CyberCoff, CyberStation, and more. It allows you to conveniently scan to pay, transfer money, top up funds, or receive Cashback for various services. Plus, you can track notifications for all these services within a single app."
+        }
+      }
+    },
+    "button": {
+      "view_all": "View all",
+      "navs": {
+        "home": "Home",
+        "projects": "Projects"
+      }
+    }
+  },
+  "experience-section": {
+    "title": "Experience",
+    "experiences": {
+      "general": {
+        "title": "Experience",
+        "lists": {
+          "list_1": {
+            "work": "Mobile Payment Intermediary System Development (Cyberpay Wallet)",
+            "department": "[Internship] Front-End Developer",
+            "company": "Cyberpay Technology Co., Ltd.",
+            "location": "WFH, Samutprakan, TH",
+            "date": "Dec 2023 - Mar 2024",
+            "details": {
+              "detail_1": "Developed a native mobile application using the Flutter Framework, transitioning from Vue-Ionic to leverage modern technology.",
+              "detail_2": "Implemented the front-end of the application to align precisely with designs provided in Figma.",
+              "detail_3": "Integrated the application with API services to ensure full functionality and adherence to the original application’s specifications.",
+              "detail_4": "Collaborated in team meetings to discuss and resolve challenges encountered during the development process."
+            }
+          },
+          "list_2": {
+            "work": "Myanmar Gold Shop Management System Development (Juliana CRM)",
+            "department": "[Internship] Front-End Developer",
+            "company": "Cyberpay Technology Co., Ltd.",
+            "location": "WFH, Samutprakan, TH",
+            "date": "Dec 2023 - Mar 2024",
+            "details": {
+              "detail_1": "Developed and enhanced the front-end website to align with Figma designs, utilizing the MERN Stack and Material-UI (MUI).",
+              "detail_2": "Optimized and resolved issues in specific front-end functions to ensure proper and accurate performance.",
+              "detail_3": "Collaborated in team meetings to discuss and resolve challenges encountered during the development process."
+            }
+          },
+          "list_3": {
+            "work": "Freelance Front-End Website Developer (TNN Project)",
+            "department": "[Freelance] Front-End Developer",
+            "company": "WONE' Co., Ltd.",
+            "location": "WFH, Samutprakan, TH",
+            "date": "Dec 2024 - Feb 2025",
+            "details": {
+              "detail_1": "Developed front-end websites based on client-provided designs from AI, XD, PSD, and Figma files.",
+              "detail_2": "Utilized HTML, CSS, and JavaScript to create websites that align with client specifications and requirements.",
+              "detail_3": "Participated in client meetings to gather feedback and recommendations, implementing revisions to enhance the quality of the work."
+            }
+          }
+        }
+      },
+      "other": {
+        "title": "Other Experience",
+        "lists": {
+          "list_1": {
+            "work": "Convenience Store Part-Time Staff",
+            "department": "[Part-time] Staff",
+            "company": "Mini Big C",
+            "location": "Samutprakan, TH",
+            "date": "April 2021 - July 2021",
+            "details": {
+              "detail_1": "Provided courteous and efficient customer service to patrons visiting the store.",
+              "detail_2": "Processed transactions accurately at the checkout counter.",
+              "detail_3": "Organized and arranged merchandise neatly within the store to maintain an appealing display.",
+              "detail_4": "Delivered products to customers’ homes as part of the store’s delivery service.",
+              "detail_5": "Promoted weekly or monthly product promotions to customers, contributing to achieving the store’s sales targets."
+            }
+          },
+          "list_2": {
+            "work": "Design and Production of Comprehensive Power Supply Equipment",
+            "department": "[Contact] NC Program",
+            "company": "Thai Aichi Denki Co., Ltd.",
+            "location": "Samutprakan, TH",
+            "date": "July 2024 - March 2025",
+            "details": {
+              "detail_1": "Reviewed and resolved issues in assigned design components to meet client requirements to the fullest extent possible.",
+              "detail_2": "Utilized CAD software to design enclosures for power supply equipment.",
+              "detail_3": "Employed CAM software to generate G-code from CAD designs, creating precise instructions for manufacturing machinery.",
+              "detail_4": "Documented cutting orders for steel plates based on the quantity of components required for production.",
+              "detail_5": "Participated in departmental meetings to plan and address design errors, minimizing inaccuracies in the production process."
+            }
+          }
+        }
+      }
+    }
+  },
+  "education-section": {
+    "title": "Education",
+    "lists": {
+      "list_1": {
+        "date": "2017 - 2020",
+        "field_of_study": "Business Art",
+        "institute": "Samutprakan School",
+        "location": "Samutprakan, Thailand",
+        "gpa": "3.54"
+      },
+      "list_2": {
+        "date": "2020 - 2024",
+        "field_of_study": "Faculty of Science and Technology, Major of Computer Science",
+        "institute": "Suan Sunandha Rajabhat University",
+        "location": "Bangkok, Thailand",
+        "gpa": "3.70"
+      }
+    }
+  },
+  "certs-section": {
+    "title": "Certifications"
+  },
+  "skills-section": {
+    "title": "Skills"
+  },
+  "contactme-section": {
+    "title": "Contact Me",
+    "contact-form": {
+      "phone": {
+        "label": "Phone"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "social": {
+        "label": "Social"
+      },
+      "message": {
+        "label": "Message",
+        "input-form": {
+          "name": "name",
+          "email": "email",
+          "message": "messsage"
+        },
+        "button": {
+          "label": {
+            "send": "Send Message",
+            "sending": "Sending..."
+          }
+        }
+      },
+      "alert-message": {
+        "send": {
+          "success": "Message send successfully!",
+          "failed": "Failed to send message. Please try again later"
+        }
+      }
+    }
+  }
+}

@@ -2,19 +2,25 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
+import { fadeMotion } from '@/src/app/constants/motion'
 import { SlLocationPin } from "react-icons/sl";
 import { EXPERIENCES } from '../constants/data/experience'
 import Title from '@/components/shared/TitleComponent';
+import { useTranslations } from 'next-intl';
 
 export default function Experience() {
+  const t = useTranslations('experience-section')
+
+  const experienceGeneralData = [...EXPERIENCES["general"]].reverse()
+  const experienceOtherData = [...EXPERIENCES["other"]].reverse()
+
   return (
     <section id='experience' className='container py-15 scroll-mt-10'>
       <motion.div {...fadeMotion} className='flex flex-col gap-8'>
-        <Title title='💼 Experience' />
+        <Title title={`💼 ${t('experiences.general.title')}`} />
 
         <div className='flex flex-col gap-12'>
-          {EXPERIENCES["general"].map((experience, index) => (
+          {experienceGeneralData.map((experience, index) => (
             <div
               key={index}
               className='flex flex-col gap-8 pl-4 border-l-4 border-sky-500/60 dark:border-white/50'
@@ -27,21 +33,21 @@ export default function Experience() {
                   <div className='location flex items-center justify-between gap-3 text-muted-paragraph'>
                     <div className='flex gap-1'>
                       <SlLocationPin size={16} />
-                      <p className='text-[13px] sm:text-sm'>{experience.company} | {experience.location}</p>
+                      <p className='text-[13px] sm:text-sm'>{t(experience.company_key)} | {t(experience.location_key)}</p>
                     </div>
-                    <p className='text-[13px] sm:text-sm'>{experience.date}</p>
+                    <p className='text-[13px] sm:text-sm'>{t(experience.date_key)}</p>
                   </div>
 
-                  <h3 className='text-base font-semibold'>{experience.work}</h3>
-                  <p className='text-sm text-muted-paragraph'>{experience.department}</p>
+                  <h3 className='text-base font-semibold'>{t(experience.work_key)}</h3>
+                  <p className='text-sm text-muted-paragraph'>{t(experience.department_key)}</p>
                 </div>
               </div>
 
               <div className="description">
                 <ul className='list-disc list-inside space-y-2'>
-                  {experience.details.map((detail, index) => (
+                  {experience.details_key.map((detail, index) => (
                     <li key={index} className='text-sm sm:text-base text-muted-paragraph'>
-                      {detail}
+                      {t(detail)}
                     </li>
                   ))}
                 </ul>
@@ -50,10 +56,10 @@ export default function Experience() {
           ))}
         </div>
 
-        <Title title='💼 Other Experience' />
+        <Title title={`💼 ${t('experiences.other.title')}`} />
 
         <div className='flex flex-col gap-12'>
-          {EXPERIENCES["other"].map((experience, index) => (
+          {experienceOtherData.map((experience, index) => (
             <div
               key={index}
               className='flex flex-col gap-8 pl-4 border-l-4 border-sky-500/60 dark:border-white/50'
@@ -66,21 +72,21 @@ export default function Experience() {
                   <div className='location flex items-center justify-between gap-3 text-muted-paragraph'>
                     <div className='flex gap-1'>
                       <SlLocationPin size={16} />
-                      <p className='text-[13px] sm:text-sm'>{experience.company} | {experience.location}</p>
+                      <p className='text-[13px] sm:text-sm'>{t(experience.company_key)} | {t(experience.location_key)}</p>
                     </div>
-                    <p className='text-[13px] sm:text-sm'>{experience.date}</p>
+                    <p className='text-[13px] sm:text-sm'>{t(experience.date_key)}</p>
                   </div>
 
-                  <h3 className='text-base font-semibold'>{experience.work}</h3>
-                  <p className='text-sm text-muted-paragraph'>{experience.department}</p>
+                  <h3 className='text-base font-semibold'>{t(experience.work_key)}</h3>
+                  <p className='text-sm text-muted-paragraph'>{t(experience.department_key)}</p>
                 </div>
               </div>
 
               <div className="description">
                 <ul className='list-disc list-inside space-y-2'>
-                  {experience.details.map((detail, index) => (
+                  {experience.details_key.map((detail, index) => (
                     <li key={index} className='text-sm sm:text-base text-muted-paragraph'>
-                      {detail}
+                      {t(detail)}
                     </li>
                   ))}
                 </ul>

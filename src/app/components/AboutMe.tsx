@@ -3,17 +3,20 @@
 import React from 'react'
 import { PROFILE, SOFTSKILLS } from '../constants/data/main'
 import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
+import { fadeMotion } from '@/src/app/constants/motion'
 import Title from '@/components/shared/TitleComponent'
+import { useTranslations } from 'next-intl'
 
 export default function AboutMe() {
+    const t = useTranslations('aboutme-section')
+
     return (
         <section id='about' className='container pt-20 pb-15 scroll-mt-5'>
             <motion.div {...fadeMotion} className='flex flex-col gap-8'>
-                <Title title="👋 About me" />
+                <Title title={`👋 ${t('title')}`} />
 
                 <p className='text-muted-paragraph' data-aos="fade-up" data-aos-duration={800}>
-                    {PROFILE.work_objective}
+                    {t(PROFILE.description_key)}
                 </p>
 
                 <div>
@@ -28,7 +31,7 @@ export default function AboutMe() {
                                 data-aos-delay={index * 50}
                                 data-aos-duration={1000}
                             >
-                                {skill}
+                                {t(skill)}
                             </span>
                         ))}
                     </div>

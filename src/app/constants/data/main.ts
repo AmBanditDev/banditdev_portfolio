@@ -13,19 +13,19 @@ const social_ig = "https://www.instagram.com/thanwabandit_y?igsh=MXZtdmhuYjliOTZ
 const social_linkedin = "https://www.linkedin.com/in/thanwabandit-yoschamlue-86ba232b9"
 
 export const PROFILE = {
-    firstname: "Thanwabandit",
-    lastname: "Yoschamlue",
-    aka: "BanditDev",
+    firstname_key: "firstname",
+    lastname_key: "lastname",
+    aka_key: "aka",
     profile_image: profileMeIlus,
     email: "thanwabandit.yos@gmail.com",
-    address: "Samutprakan, Thailand",
-    full_address: "1739/35, Soi Noree 1, Bangpoo Villa, Sukhumvit Rd. Taibanmai, Mueang, Samut Prakan 10280, Thailand",
+    address_key: "address",
+    full_address_key: "full_address",
     department: [
         "Frontend Developer",
         "Fullstack Developer"
     ],
-    represent: "I'm a web developer with a passion for technology, always ready to learn new things. I'm seeking opportunities to collaborate with expert teams to expand my capabilities and grow into a web expert in the future.",
-    work_objective: "I can develop websites and mobile applications both front-end and back-end. But I am good at front-end software development. I'm a new developer looking for an opportunity to expand my skills. And I am committed to improving my abilities in these technologies. I am ready for a career opportunity and am excited to be involved in a project that allows me to expand my experience and knowledge.",
+    represent_key: "represent",
+    description_key: "description",
     cv_resume_link: "https://drive.google.com/file/d/1RCZ_roMHp2PaJ3LhrlA1oE6c_eakg73g/view?usp=drive_link",
     socials: [
         {
@@ -73,9 +73,9 @@ export const SOCIALS = [
 ]
 
 export const SOFTSKILLS = [
-    "Teamwork",
-    "Self-Improvement",
-    "Creativity",
-    "Optimism",
-    "Adaptability",
+    "soft-skills.skill_1",
+    "soft-skills.skill_2",
+    "soft-skills.skill_3",
+    "soft-skills.skill_4",
+    "soft-skills.skill_5",
 ]

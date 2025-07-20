@@ -1,11 +1,11 @@
-import { icons } from '@/app/constants/icons'
+import { icons } from '@/src/app/constants/icons'
 import { MoveLeft } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
+import { fadeMotion } from '@/src/app/constants/motion'
 
 const NotFound = () => {
     return (

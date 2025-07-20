@@ -5,10 +5,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 // import { MdArrowOutward } from 'react-icons/md'
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { PROJECTS } from '@/app/constants/data/projects';
+import { PROJECTS } from '../../../constants/data/projects';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { motion } from 'framer-motion'
-import { fadeMotion } from '@/app/constants/motion'
+import { fadeMotion } from '@/src/app/constants/motion'
 // import { Button } from '@/components/ui/button';
 
 import {
@@ -18,9 +18,11 @@ import {
 } from "@/components/ui/tooltip"
 import { useParams } from 'next/navigation'
 import NotFound from '@/components/not-found';
+import { useTranslations } from 'next-intl';
 
 export default function ProjectDetailPage() {
   const params = useParams()
+  const t = useTranslations('projects-section')
   const project = PROJECTS.find((p) => p.slug === params.slug);
 
   if (!project) {
@@ -36,7 +38,7 @@ export default function ProjectDetailPage() {
         {...fadeMotion}
         className='flex flex-col gap-8'>
         <Link href="/projects" className='text-sm md:text-base text-navigate flex items-center gap-1.5 hover-link'>
-          <FaArrowLeftLong className='size-4 md:size-5' /> Projects
+          <FaArrowLeftLong className='size-4 md:size-5' /> {t('button.navs.projects')}
         </Link>
 
         <div
@@ -48,7 +50,7 @@ export default function ProjectDetailPage() {
             </h1>
 
             <p className="text-sm md:text-base text-muted-paragraph">
-              {project.descriptionEN}
+              {t(project.description_key)}
             </p>
 
             <div className="flex flex-col sm:flex-row items-start justify-start gap-4 sm:gap-10 text-sm text-gray-500 dark:text-white/50">

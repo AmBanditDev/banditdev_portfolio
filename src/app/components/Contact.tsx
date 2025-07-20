@@ -24,6 +24,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Title from '@/components/shared/TitleComponent';
 import { Loader2Icon, Send } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const nameSchema = z.string()
   .min(2, "Name must be at least 2 characters.")
@@ -44,6 +45,7 @@ const formSchema = z.object({
 
 
 export default function Contact() {
+  const t = useTranslations('contactme-section');
   const pathname = usePathname()
   const [isSending, setIsSending] = useState(false)
 
@@ -76,12 +78,12 @@ export default function Contact() {
       values,
       "bLuPsrylU_BPaXByq",
     ).then((response) => {
-      console.log("SUCCESS", response.status, response.text);
-      toast.success("Message send successfully!")
+      // console.error("SUCCESS", response.status, response.text);
+      toast.success(t('contact-form.alert-message.send.success'))
       form.reset();
     }).catch((error) => {
-      console.log("FAILED...", error);
-      toast.success("Failed to send message. Please try again later")
+      // console.error("FAILED...", error);
+      toast.success(t('contact-form.alert-message.send.failed'))
     }).finally(() => {
       setIsSending(false)
     })
@@ -91,7 +93,7 @@ export default function Contact() {
     <section id='contact' className='scroll-mt-20'>
       <Toaster />
       <div className='contact flex flex-col gap-8'>
-        <Title title='💬 Contact Me' />
+        <Title title={`💬 ${t('title')}`} />
 
         <div className='content flex flex-col md:flex-row justify-between gap-12 md:gap-8'>
           <div
@@ -103,7 +105,9 @@ export default function Contact() {
               const ContactIcon = contact.icon
               return (
                 <div key={index} className='email flex flex-col gap-4'>
-                  <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>{contact.title}:</h3>
+                  <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>
+                    {t(contact.title)}:
+                  </h3>
                   <Link href={contact.link} target='_blank' className='text-gray-500 dark:text-white/50 dark:hover:text-slate-100 transition duration-300 flex items-center gap-1.5 hover-link'>
                     <ContactIcon size={20} /> {contact.subtitle}
                   </Link>
@@ -112,7 +116,9 @@ export default function Contact() {
             })}
             <div>
               <div className='email flex flex-col gap-4'>
-                <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>Social:</h3>
+                <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>
+                  {t('contact-form.social.label')}:
+                </h3>
                 {PROFILE.socials.map((social, index) => {
                   const SocialIcon = social.icon
                   return (
@@ -129,7 +135,9 @@ export default function Contact() {
             className='contact-form w-full flex flex-col gap-4' data-aos="fade-up"
             data-aos-duration={1200}
           >
-            <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>Message:</h3>
+            <h3 className='text-base text-slate-950 dark:text-slate-200 font-semibold'>
+              {t('contact-form.message.label')}:
+            </h3>
 
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -139,7 +147,7 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input type='text' id='name' placeholder="Name" {...field} />
+                        <Input type='text' id='name' placeholder={t('contact-form.message.input-form.name')} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -151,7 +159,7 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input type='email' id='email' placeholder="Email" {...field} />
+                        <Input type='email' id='email' placeholder={t('contact-form.message.input-form.email')} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -163,7 +171,7 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Textarea placeholder="Message" {...field} className='min-h-40' />
+                        <Textarea placeholder={t('contact-form.message.input-form.message')} {...field} className='min-h-40' />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -178,12 +186,12 @@ export default function Contact() {
                   {isSending ? (
                     <span className='flex items-center gap-2 '>
                       <Loader2Icon className="animate-spin" />
-                      Sending...
+                      {t('contact-form.message.button.label.sending')}
                     </span>
                   ) : (
                     <span className='flex items-center gap-2 '>
                       <Send />
-                      Send Message
+                      {t('contact-form.message.button.label.send')}
                     </span>
                   )}
                 </Button>

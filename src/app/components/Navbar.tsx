@@ -8,12 +8,15 @@ import { MenuIcon } from 'lucide-react'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Separator } from '@/components/ui/separator'
 import { PROFILE } from '../constants/data/main'
+import LocaleSwitcher from './LocaleSwitcher'
+import { useTranslations } from 'next-intl'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // เพิ่ม state เพื่อควบคุมการเปิด/ปิด Sheet
+  const t = useTranslations('navigation');
+  const [isOpen, setIsOpen] = useState(false);
 
   const closeSheet = () => {
-    setIsOpen(false); // ตั้งค่าให้ Sheet ปิด
+    setIsOpen(false);
   };
 
 
@@ -36,49 +39,51 @@ export default function Navbar() {
                 href="/#about"
                 className="nav-link-underline"
               >
-                About
+                {t('about')}
               </Link>
               <Link
                 href="/#projects"
                 className="nav-link-underline"
               >
-                Projects
+                {t('projects')}
               </Link>
               <Link
                 href="/#experience"
                 className="nav-link-underline"
 
               >
-                Experiences
+                {t('experience')}
               </Link>
               <Link
                 href="/#education"
                 className="nav-link-underline"
               >
-                Education
+                {t('education')}
               </Link>
               <Link href="/#certs"
                 className="nav-link-underline"
               >
-                Certs
+                {t('certs')}
               </Link>
               <Link
                 href="/#skills"
                 className="nav-link-underline"
               >
-                Skills
+                {t('skills')}
               </Link>
               <Link
                 href="/#contact"
                 className="nav-link-underline"
               >
-                Contact
+                {t('contact')}
               </Link>
             </nav>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <ModeToggle />
+
+            <LocaleSwitcher />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
@@ -95,31 +100,30 @@ export default function Navbar() {
 
                 <div className="grid gap-2 p-6 space-y-4">
                   <Link href="/#about" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    About
+                    {t('about')}
                   </Link>
                   <Link href="/#projects" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Projects
+                    {t('projects')}
                   </Link>
                   <Link href="/#experience" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet} >
-                    Experiences
+                    {t('experience')}
                   </Link>
                   <Link href="/#education" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Education
+                    {t('education')}
                   </Link>
                   <Link href="/#certs" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Certs
+                    {t('certs')}
                   </Link>
                   <Link href="/#skills" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Skills
+                    {t('skills')}
                   </Link>
                   <Link href="/#contact" className="w-fit text-2xl font-medium nav-link-underline" onClick={closeSheet}>
-                    Contact
+                    {t('contact')}
                   </Link>
                 </div>
 
                 <SheetFooter className='space-y-4'>
                   <Separator />
-                  <p className='text-sm text-muted-paragraph'>{PROFILE.full_address}</p>
                   <div className="socials flex gap-4">
                     {PROFILE.socials.map((social, index) => {
                       const SocialIcon = social.icon
