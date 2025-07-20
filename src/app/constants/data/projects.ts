@@ -6,6 +6,10 @@ import words_around_us_coverimg from "@/public/assets/images/projects/words_arou
 import cafeheal_coverimg from "@/public/assets/images/projects/cafeheal/main-2.png";
 import juliana_crm_coverimg from "@/public/assets/images/projects/juliana_crm/main.png";
 import cyberpay_wallet_coverimg from "@/public/assets/images/projects/cyberpay_wallet/cyberpay-wallet-cover-img.png";
+import tnn_coverimg from "@/public/assets/images/projects/tnn/tnn-cover-img.png";
+import caplogistics_coverimg from "@/public/assets/images/projects/caplogistics/caplogistics-cover-img.png";
+import banditdev_portfolio_coverimg from "@/public/assets/images/projects/banditdev_portfolio/banditdev-portfolio-cover-img.png";
+
 import { icons } from "../icons";
 import type { StaticImageData } from "next/image";
 
@@ -277,6 +281,102 @@ export const PROJECTS: ProjectProps[] = [
       {
         name: "Flutter",
         icon: icons.flutter,
+        color: "",
+      },
+    ],
+    published: true,
+  },
+  {
+    category_name: "Web Application",
+    project_name: "TNN Website",
+    app_name: "TNN",
+    slug: "tnn-website",
+    year: 2025,
+    project_image: tnn_coverimg,
+    description_key: "projects.lists.list_7.description",
+    SKILLS: [
+      {
+        name: "HTML",
+        icon: icons.html,
+        color: "",
+      },
+      {
+        name: "CSS",
+        icon: icons.css,
+        color: "",
+      },
+      {
+        name: "JavaScript",
+        icon: icons.javascript,
+        color: "",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: icons.tailwind,
+        color: "",
+      },
+    ],
+    published: true,
+  },
+  {
+    category_name: "Web Application",
+    project_name: "CAP Logistics",
+    app_name: "CAP Logistics",
+    slug: "caplogistics",
+    year: 2025,
+    project_image: caplogistics_coverimg,
+    description_key: "projects.lists.list_8.description",
+    SKILLS: [
+      {
+        name: "Next.js",
+        icon: icons.nextjs,
+        color: "",
+      },
+      {
+        name: "TypeScript",
+        icon: icons.typescript,
+        color: "",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: icons.tailwind,
+        color: "",
+      },
+      {
+        name: "Shadcn UI",
+        icon: icons.shadcn,
+        color: "",
+      },
+    ],
+    published: true,
+  },
+  {
+    category_name: "Web Application",
+    project_name: "BanditDev Portfolio",
+    app_name: "BanditDev Portfolio",
+    slug: "banditdev-portfolio",
+    year: 2025,
+    project_image: banditdev_portfolio_coverimg,
+    description_key: "projects.lists.list_9.description",
+    SKILLS: [
+      {
+        name: "Next.js",
+        icon: icons.nextjs,
+        color: "",
+      },
+      {
+        name: "TypeScript",
+        icon: icons.typescript,
+        color: "",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: icons.tailwind,
+        color: "",
+      },
+      {
+        name: "Shadcn UI",
+        icon: icons.shadcn,
         color: "",
       },
     ],

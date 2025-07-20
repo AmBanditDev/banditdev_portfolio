@@ -91,13 +91,16 @@ export default function ProjectDetailPage() {
           </div>
 
           <AspectRatio ratio={16 / 9}>
-            <Image
-              src={project.project_image}
-              alt={project.app_name}
-              width={1920}
-              height={1080}
-              loading='lazy'
-              className='w-full h-full rounded-md object-cover' />
+            <div className='border-2 border-gray-600 p-2 rounded-lg'>
+              <Image
+                src={project.project_image}
+                alt={project.app_name}
+                width={1920}
+                height={1080}
+                loading='lazy'
+                className='w-full h-full rounded-md object-cover'
+              />
+            </div>
           </AspectRatio>
         </div>
       </motion.div>

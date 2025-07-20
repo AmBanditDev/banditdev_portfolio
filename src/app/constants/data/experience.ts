@@ -38,6 +38,18 @@ export const EXPERIENCES = {
             company_key: "experiences.general.lists.list_3.company",
             location_key: "experiences.general.lists.list_3.location",
         },
+        {
+            date_key: "experiences.general.lists.list_4.date",
+            work_key: "experiences.general.lists.list_4.work",
+            department_key: "experiences.general.lists.list_4.department",
+            details_key: [
+                "experiences.general.lists.list_4.details.detail_1",
+                "experiences.general.lists.list_4.details.detail_2",
+                "experiences.general.lists.list_4.details.detail_3",
+            ],
+            company_key: "experiences.general.lists.list_4.company",
+            location_key: "experiences.general.lists.list_4.location",
+        },
     ],
 
     "other": [

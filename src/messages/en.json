@@ -70,6 +70,18 @@
         "list_6": {
           "title": "Cyberpay Wallet",
           "description": "Cyberpay Wallet is a mobile payment intermediary application designed for services within the Cyberpay Technology network. This includes services like CyberWash, CyberCoff, CyberStation, and more. It allows you to conveniently scan to pay, transfer money, top up funds, or receive Cashback for various services. Plus, you can track notifications for all these services within a single app."
+        },
+        "list_7": {
+          "title": "TNN",
+          "description": "The official news website for TNN16. Stay informed on current events, economics, and all the latest truths. Covering the newest developments, breaking news, hot topics, politics, economy, society, entertainment, lottery, stock market, football, and other sports."
+        },
+        "list_8": {
+          "title": "CAP Logistics",
+          "description": "A transportation company website that provides domestic cargo transportation services and cross-border cargo transportation services covering 5 countries in the ASEAN region: Thailand, Cambodia, Myanmar, Laos, and Malaysia. We offer various types of vehicle services including 4-wheel trucks, 6-wheel trucks, 10-wheel trucks, trailer trucks, and truck with container services, among others."
+        },
+        "list_9": {
+          "title": "BanditDev Portfolio",
+          "description": "A website showcasing Thanwabandit Yoschamlue experience, project portfolio, certifications, and various skills, intended for job searching and applications."
         }
       }
     },
@@ -122,6 +134,20 @@
               "detail_1": "Developed front-end websites based on client-provided designs from AI, XD, PSD, and Figma files.",
               "detail_2": "Utilized HTML, CSS, and JavaScript to create websites that align with client specifications and requirements.",
               "detail_3": "Participated in client meetings to gather feedback and recommendations, implementing revisions to enhance the quality of the work."
+            }
+          },
+          "list_4": {
+            "work": "Freelance Front-End Company Website Developer (CAP Logistics Project)",
+            "department": "[Freelance] Front-End Developer",
+            "company": "CAP Logistics Co., Ltd.",
+            "location": "WFH, Samutprakan, TH",
+            "date": "June 2568",
+            "details": {
+              "detail_1": "Gather customer requirements and finalize quotation agreements.",
+              "detail_2": "Design and develop the front-end of the website.",
+              "detail_3": "Collect data and assets from customers for website development.",
+              "detail_4": "Develop the website using Next.js, TypeScript, Tailwind CSS, and Shadcn UI to meet customer specifications.",
+              "detail_5": "Actively listen to customer feedback and suggestions for continuous improvement."
             }
           }
         }
