@@ -132,7 +132,7 @@
             "date": "Dec 2024 - Feb 2025",
             "details": {
               "detail_1": "Developed front-end websites based on client-provided designs from AI, XD, PSD, and Figma files.",
-              "detail_2": "Utilized HTML, CSS, and JavaScript to create websites that align with client specifications and requirements.",
+              "detail_2": "Utilized HTML, CSS, JavaScript and Tailwind CSS to create websites that align with client specifications and requirements.",
               "detail_3": "Participated in client meetings to gather feedback and recommendations, implementing revisions to enhance the quality of the work."
             }
           },
