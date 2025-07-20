@@ -13,6 +13,7 @@
     "contact": "Contact"
   },
   "hero-section": {
+    "say_hello": "Hello!, I'm",
     "firstname": "Thanwabandit",
     "lastname": "Yoschamlue",
     "aka": "BanditDev",
@@ -30,13 +31,15 @@
   },
   "aboutme-section": {
     "title": "About Me",
-    "description": "I can develop websites and mobile applications both front-end and back-end. But I am good at front-end software development. I'm a new developer looking for an opportunity to expand my skills. And I am committed to improving my abilities in these technologies. I am ready for a career opportunity and am excited to be involved in a project that allows me to expand my experience and knowledge.",
+    "description": "Hello, my name is Thanwabandit Yoschamlue (Pep). I hold a bachelor's degree in Computer Science from the Faculty of Science and Technology, Suan Sunandha Rajabhat University. During my studies, I gained experience developing both web and mobile applications, covering both Frontend and Backend aspects. I also have experience working as a freelance Frontend Developer. I'm keenly interested in a Full-stack Developer position. Therefore, I've consistently dedicated myself to learning, practicing coding, and enhancing my skills to develop highly efficient applications that deliver maximum benefit. I sincerely hope to utilize my skills and knowledge to contribute to organizational development, creating modern and beneficial solutions for businesses and society in the future.",
     "soft-skills": {
-      "skill_1": "Teamwork",
-      "skill_2": "Self-Improvement",
-      "skill_3": "Creativity",
-      "skill_4": "Optimism",
-      "skill_5": "Adaptability"
+      "skill_1": "Problem-Solving",
+      "skill_2": "Communication",
+      "skill_3": "Teamwork",
+      "skill_4": "Self-Improvement",
+      "skill_5": "Creativity",
+      "skill_6": "Optimism",
+      "skill_7": "Adaptability"
     }
   },
   "projects-section": {

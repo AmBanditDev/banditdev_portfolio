@@ -54,6 +54,11 @@ export default function Hero() {
             {/* Information */}
             <div className='flex flex-col'>
               <div className='flex flex-col text-center lg:text-start space-y-2'>
+
+                <div className='text-sm text-muted-paragraph'>
+                  {t('say_hello')}
+                </div>
+
                 <h1 className='text-title text-xl md:text-2xl font-semibold'>
                   {t('firstname')} {t('lastname')}
                 </h1>
@@ -84,7 +89,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="links flex flex-col lg:flex-row items-center justify-between gap-4 pt-3 border-t border-slate-200 dark:border-slate-800">
+        <div className="links flex flex-col lg:flex-row items-center justify-between gap-3 md:gap-4 pt-3 border-t border-slate-200 dark:border-slate-800">
           <div
             onClick={handleCopyEmail}
             className='email flex items-center gap-2 cursor-pointer group'>

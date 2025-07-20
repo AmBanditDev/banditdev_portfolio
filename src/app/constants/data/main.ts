@@ -78,4 +78,6 @@ export const SOFTSKILLS = [
     "soft-skills.skill_3",
     "soft-skills.skill_4",
     "soft-skills.skill_5",
+    "soft-skills.skill_6",
+    "soft-skills.skill_7",
 ]
