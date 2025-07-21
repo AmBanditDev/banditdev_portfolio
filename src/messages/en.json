@@ -18,10 +18,10 @@
     "lastname": "Yoschamlue",
     "aka": "BanditDev",
     "address": "Samutprakan, Thailand",
-    "full_address": "1739/35, ซอยโนรี 1 บางปูวิลล่า ถ.สขุมวิท ต.ท้ายบ้านใหม่, อ.เมือง, จ.สมุทรปราการ 10280, ประเทศไทย",
+    "full_address": "1739/35 Soi Noree 1, Bangpu Villa, Sukhumvit Road, Taibannmai Subdistrict, Mueang District, Samutprakan 10280, Thailand",
     "department": {
       "frontend": "Frontend Developer",
-      "fullstack": "Fullstack Developer"
+      "fullstack": "Full-stack Developer"
     },
     "represent": "I'm a web developer with a passion for technology, always ready to learn new things. I'm seeking opportunities to collaborate with expert teams to expand my capabilities and grow into a web expert in the future.",
     "button": {
@@ -229,7 +229,7 @@
         "input-form": {
           "name": "name",
           "email": "email",
-          "message": "messsage"
+          "message": "message"
         },
         "button": {
           "label": {
