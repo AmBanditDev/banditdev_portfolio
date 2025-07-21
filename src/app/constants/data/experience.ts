@@ -46,6 +46,8 @@ export const EXPERIENCES = {
                 "experiences.general.lists.list_4.details.detail_1",
                 "experiences.general.lists.list_4.details.detail_2",
                 "experiences.general.lists.list_4.details.detail_3",
+                "experiences.general.lists.list_4.details.detail_4",
+                "experiences.general.lists.list_4.details.detail_5",
             ],
             company_key: "experiences.general.lists.list_4.company",
             location_key: "experiences.general.lists.list_4.location",
