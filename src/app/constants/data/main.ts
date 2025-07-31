@@ -26,7 +26,7 @@ export const PROFILE = {
     ],
     represent_key: "represent",
     description_key: "description",
-    cv_resume_link: "https://drive.google.com/file/d/1RCZ_roMHp2PaJ3LhrlA1oE6c_eakg73g/view?usp=drive_link",
+    cv_resume_link: "https://drive.google.com/file/d/1WJiBXDx-r4On2hDkEP2oRw7FOxGOzwrR/view?usp=sharing",
     socials: [
         {
             icon: FaGithub,
