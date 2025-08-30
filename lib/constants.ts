@@ -5,7 +5,7 @@ export const SEO = {
         alternates: {
             canonical: './',
         },
-        metadataBase: new URL('https://thanwabandit-yoschamlue-portfolio.vercel.app/'),
+        metadataBase: new URL('https://thanwabandit-portfolio.vercel.app/th'),
         openGraph: {
             title: "Thanwabandit Yoschamlue | Frontend Developer & Full Stack Developer",
             description: "I'm a new web developer with a passion for technology, eager to learn new things. I'm actively seeking opportunities to collaborate with expert teams to expand my capabilities and grow into a web specialist in the future.",

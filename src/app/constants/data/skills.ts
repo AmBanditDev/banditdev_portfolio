@@ -30,10 +30,10 @@ export const SKILLS = {
     //   icon: icons.redux,
     //   name: "Redux",
     // },
-    {
-      icon: icons.zustand,
-      name: "Zustand",
-    },
+    // {
+    //   icon: icons.zustand,
+    //   name: "Zustand",
+    // },
     // {
     //   icon: icons.tanstackQuery,
     //   name: "TanStack Query",
@@ -50,10 +50,10 @@ export const SKILLS = {
       icon: icons.shadcn,
       name: "Shadcn UI",
     },
-    {
-      icon: icons.mui,
-      name: "Material UI",
-    },
+    // {
+    //   icon: icons.mui,
+    //   name: "Material UI",
+    // },
   ],
 
   backend_database: [
@@ -115,14 +115,14 @@ export const SKILLS = {
       icon: icons.flutter,
       name: "Flutter",
     },
-    {
-      icon: icons.reactnative,
-      name: "React Native",
-    },
-    {
-      icon: icons.expo,
-      name: "Expo",
-    },
+    // {
+    //   icon: icons.reactnative,
+    //   name: "React Native",
+    // },
+    // {
+    //   icon: icons.expo,
+    //   name: "Expo",
+    // },
   ],
 
   design_tools: [
